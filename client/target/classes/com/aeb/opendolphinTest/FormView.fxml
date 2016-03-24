@@ -4,6 +4,9 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
@@ -72,16 +75,13 @@
 	<right>
 		<ScrollPane fitToHeight="true" fitToWidth="true" minViewportHeight="1.0" minViewportWidth="1.0" BorderPane.alignment="CENTER">
 			<content>
-				<ListView minHeight="1.0" minWidth="1.0" BorderPane.alignment="CENTER" />
+				<ListView fx:id="errorList" focusTraversable="false" minHeight="1.0" minWidth="1.0" BorderPane.alignment="CENTER" />
 			</content>
 			<BorderPane.margin>
 				<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 			</BorderPane.margin>
 		</ScrollPane>
 	</right>
-	<padding>
-		<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
-	</padding>
 	<left>
 		<VBox disable="true" BorderPane.alignment="CENTER">
 			<children>
@@ -93,4 +93,25 @@
          </BorderPane.margin>
 		</VBox>
 	</left>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
 </BorderPane>

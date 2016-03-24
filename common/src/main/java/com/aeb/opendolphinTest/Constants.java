@@ -11,5 +11,6 @@ public class Constants {
      */
     public final static String CONTROLLER_NAME = "MyController";
     public final static String CalcController_NAME = "CalculatorController";
+    public final static String FORM_CONTROLLER_NAME = "FormController";
 
 }
